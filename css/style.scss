@@ -1,13 +1,10 @@
 @charset "UTF-8";
+/* Maquetado General */
 * {
-  margin-top: 0;
-  padding-top: 0;
-  border: 0;
+  background-color: black;
 }
 
-/* Maquetado General */
 #bodygeneral {
-  background-color: black;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 100px auto 100px;
@@ -19,14 +16,12 @@
   height: 100px;
   width: 100%;
   box-sizing: border-box;
-  position: fixed;
-  z-index: 100;
 }
 
 #maingeneral {
   grid-area: main;
   /* background-color: yellowgreen; */
-  padding-top: 0px;
+  padding-top: 50px;
   height: auto;
   width: 100%;
 }
@@ -41,17 +36,15 @@
 /* Header - Barra de Navegación General */
 #navbar {
   display: flex;
-  background-color: rgb(0, 0, 0);
-  border-bottom: 5px solid rgb(247, 4, 4);
+  /* background-color: rgb(133, 133, 133); */
   position: fixed;
   z-index: 100;
   top: 0;
   width: 100%;
-  height: 80px;
 }
 
 .logotipo {
-  height: 80px;
+  height: 100px;
   width: auto;
 }
 
@@ -59,7 +52,7 @@
   color: white;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   font-weight: bold;
-  font-size: 15px;
+  font-size: 20px;
   text-decoration: none;
   text-decoration-line: none;
 }
@@ -77,62 +70,38 @@
 /* Media queries */
 @media (max-width: 768px) {
   #bodygeneral {
-    grid-template-rows: 100px auto; /* Revisar espacio del Footer*/
+    grid-template-rows: 80px auto;
+    padding-top: 80px;
   }
   #headergeneral {
     height: 80px;
   }
-  #navbar {
-    display: flex;
-    background-color: rgb(0, 0, 0);
-    border-bottom: 5px solid rgb(247, 4, 4);
-    width: 100%;
-    height: 80px;
-  }
-  .logotipo {
-    height: 50px;
-    width: auto;
-  }
 }
 @media (max-width: 480px) {
   #bodygeneral {
-    grid-template-rows: 100px auto; /* Revisar espacio del Footer*/
+    grid-template-rows: 60px auto;
+    padding-top: 60px;
   }
   #headergeneral {
     height: 60px;
   }
 }
-@media (max-width: 240px) {
-  #bodygeneral {
-    grid-template-rows: 100px auto; /* Revisar espacio del Footer*/
-  }
-  #headergeneral {
-    height: 80px;
-  }
-  .logotipo {
-    height: 30px;
-    width: auto;
-  }
-}
-#footer {
-  border-top: 5px solid red;
-  height: 100px;
-}
-
+/* INDEX - Main */
 .d-item {
-  height: 450px;
-  width: 100%;
+  height: 550px;
 }
 
-.imgcarrousel {
-  height: 450px;
-  width: 100%;
+.d-img,
+.d-video {
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.6);
 }
 
 #Parrafoindex {
-  color: #545454;
-  font-family: "Poppins", sans-serif;
-  font-size: 17px;
+  color: white;
+  font-family: "EB Garamond", serif;
+  font-size: 25px;
   text-align: center;
   padding: 0% 10%;
 }
@@ -143,16 +112,10 @@ main p span {
 }
 
 .card {
-  background-color: rgb(255, 255, 255);
+  /* background-color: black; */
   display: flex;
   align-items: center;
   overflow: hidden;
-}
-
-.card-body {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
 }
 
 .card img {
@@ -174,110 +137,50 @@ main p span {
 }
 
 /* CONTACTO - Main */
-.contact-section {
-  /*Img Portada -- contact-section*/
-  position: relative;
+.contacto div #map {
+  display: flex;
+  justify-content: center;
   width: 100%;
-  height: 400px;
-  overflow: hidden;
-}
-.contact-section img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.contact-section h1 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-size: 3rem;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  height: 450px;
 }
 
-.containercontacto {
-  /*2da Secc "Párrafo" - .containercontacto*/
-  background-color: black;
-  padding: 50px 15%;
-}
-.containercontacto div {
-  /*.textContato*/
-  font-family: "Poppins", serif;
-  font-weight: 300;
+#section1 {
+  margin-bottom: 200px;
+  padding: 0px 15%;
+  border-radius: 8px;
+  padding-top: 1px;
   text-align: center;
+  text-decoration: none;
 }
-.containercontacto div h2 {
+
+#section1 h2 {
   color: white;
 }
-.containercontacto div div p {
+
+#section1 div p {
   font-size: 20px;
   color: white;
 }
-.containercontacto div div p strong {
+
+#section1 div p strong {
   font-size: 22px;
-  color: rgb(253, 0, 0);
+  color: red;
 }
 
-.formulario {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-evenly;
-  width: 100%;
-  height: 400px;
-  background-color: white;
+#section2 {
+  font-size: 22px;
 }
 
-.form1, .form2 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  flex: 1 1 100%;
-}
-
-.form2 ul {
-  display: flex;
-  list-style-type: none;
-}
-
-@media (min-width: 768px) {
-  .form1, .form2 {
-    flex: 1 1 50%;
-  }
-}
 #section3 ul li {
   display: inline;
   margin-right: 10px;
 }
 
-/* TRABAJOS - Main */
-.nuestrostrabajos-section {
-  position: relative;
-  width: 100%;
-  height: 400px;
-  overflow: hidden;
-}
-
-.nuestrostrabajos-section img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.nuestrostrabajos-section h1 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.form-group {
   color: white;
-  font-size: 3rem;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
+/* TRABAJOS - Main */
 .trabajos {
   display: grid;
   padding-right: 5%;
@@ -451,50 +354,23 @@ main p span {
   }
 }
 /* TIENDA - Main */
-.video-container {
-  position: relative;
-  height: 400px;
-  width: 100%;
-}
-
-.background-video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.overlay {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-size: 3rem;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-}
-
 .containertienda {
   display: grid;
   /* padding-top: 25vh; */
-  grid-template-columns: 100%;
-  grid-template-rows: auto;
-  grid-template-areas: "tiendacontainer";
+  grid-template-columns: 20% 80%;
+  grid-template-rows: 1fr;
+  grid-template-areas: "asidetienda tiendacontainer";
 }
 
-.textoTienda {
+.asidetienda {
   /* background-color: #bcb915; */
-  grid-area: textoTienda;
+  grid-area: asidetienda;
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
   width: 100%;
   padding: 0px 30px;
   color: rgb(255, 255, 255);
   font-style: italic;
-  align-items: center;
+  /* background-color: aqua; */
   /* box-sizing:content-box; */
 }
 
@@ -509,9 +385,6 @@ main p span {
 
 .tiendacontainer {
   grid-area: tiendacontainer;
-  width: 100%;
-  overflow: hidden;
-  padding-top: 30px;
   /* background-color: blue;
   border: 5px white solid; */
   /* margin-left: 20px; */
@@ -564,46 +437,29 @@ main p span {
   height: auto;
 }
 
+@media (max-width: 900px) {
+  .containertienda {
+    grid-template-columns: 100%;
+    grid-template-rows: 200px auto;
+    grid-template-areas: "asidetienda" "tiendacontainer";
+  }
+  .asidetienda {
+    flex-direction: row;
+    width: 100%;
+    height: 150px;
+  }
+}
+/* Media query para pantallas pequeñas */
+@media (max-width: 480px) {
+  .containertienda {
+    grid-template-columns: 1fr;
+    grid-template-rows: 230px auto;
+    grid-template-areas: "asidetienda" "tiendacontainer";
+  }
+}
 /* SOBRE NOSOTROS - Main */
 .containernosotros {
   padding: 20px;
-}
-
-.nosotros-section {
-  position: relative;
-  width: 100%;
-  height: 400px;
-  overflow: hidden;
-}
-
-.nosotros-section img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.frasenosotros {
-  color: white;
-  font-family: "Poppins", serif;
-  font-weight: 200;
-}
-.frasenosotros h3 {
-  align-items: center;
-  padding: 100px;
-}
-.frasenosotros h3 span {
-  color: red;
-  font-style: italic;
-}
-
-.nosotros-section h1 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-size: 3rem;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .text-center {
@@ -628,34 +484,4 @@ main p span {
   margin-bottom: 15px;
 }
 
-.deco {
-  background-color: white;
-  height: 1000px;
-}
-
-.video-container {
-  position: relative;
-  height: 400px;
-  width: 100%;
-}
-
-.background-video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.overlay {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-size: 3rem;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-}
-
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.scss.map */

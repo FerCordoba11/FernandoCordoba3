@@ -1,0 +1,211 @@
+/* TRABAJOS - Main */
+.nuestrostrabajos-section {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.nuestrostrabajos-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.nuestrostrabajos-section h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+
+
+
+.trabajos{
+    display: grid;
+    padding-right: 5%;
+    padding-left: 5%;
+    height: auto;
+    width: 100%;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: repeat(5, auto);
+    gap: 10px;
+    grid-template-areas: "aside mesas"
+    "aside alacenas"
+    "aside escaleras"
+    "aside puertas"
+    "aside rack";
+}
+/* Aside */
+.aside{
+    /* background-color: #bcb915; */
+    grid-area: aside;
+    color: white;
+    margin: 5px;
+    height: 100%;
+    width: 200px;
+}
+.asideli {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    list-style-type: none;
+}
+.asideli a {
+    font-size:20px ;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-decoration-style: none;
+    margin: 2rem;
+}
+
+
+
+
+
+/* Trabajos */
+
+#mesas h1 {
+    color: white;
+    margin: 0% 50%;
+}
+
+
+.imgS1_trabajos{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+.a1, .a2, .a3, .a4{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.a1img, .a2img, .a3img, .a4img {
+    width: 350px;
+    height: auto;
+    margin: 20px;
+    border: 7px solid black;
+}
+.a1P, .a2P, .a3P, .a4P {
+    color: rgb(255, 255, 255);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 30px;
+}
+
+
+.b1, .b2, .b3, .b4 {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.b1img, .b2img, .b3img, .b4img {
+    width: 350px;
+    height: auto;
+    margin: 20px;
+    border: 7px solid black;
+}
+.b1P, .b2P, .b3P, .b4P { 
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 30px;
+}
+
+
+.c1, .c2, .c3, .c4 {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.c1img, .c2img, .c3img, .c4img {
+    width: 350px;
+    height: auto;
+    margin: 20px;
+    border: 7px solid black;
+}
+.c1P, .c2P, .c3P, .c4P {
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 30px;
+}
+
+.d1, .d2, .d3, .d4 {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.d1img, .d2img, .d3img, .d4img {
+    width: 350px;
+    height: auto;
+    margin: 20px;
+    border: 7px solid black;
+}
+.d1P, .d2P, .d3P, .d4P {
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 30px;
+}
+
+.e1, .e2, .e3, .e4 {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.e1img, .e2img, .e3img, .e4img {
+    width: 350px;
+    height: auto;
+    margin: 20px;
+    border: 7px solid black;
+}
+.e1P, .e2P, .e3P, .e4P {
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 30px;
+}
+
+@media (max-width: 768px) {
+    .trabajos {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "aside"
+            "mesas"
+            "alacenas"
+            "escaleras"
+            "puertas"
+            "rack";
+    }
+    .aside {
+        display: flex;
+        position: relative;
+        height: 100px;
+        width: auto;
+    }
+    .asideli {
+        flex-direction: row;
+        flex-wrap: wrap;
+        position:fixed;
+        top: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    .trabajos {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "aside"
+            "mesas"
+            "alacenas"
+            "escaleras"
+            "puertas"
+            "rack";
+        padding-right: 2%;
+        padding-left: 2%;
+    }
+}

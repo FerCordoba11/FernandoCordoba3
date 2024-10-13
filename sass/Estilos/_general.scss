@@ -1,0 +1,128 @@
+* {
+    margin-top: 0;
+    padding-top: 0;
+    border: 0;
+    // background-color: black;
+    // background-image: url(../images/madera_black.jpg);
+    // background-position: center;
+    // background-size: cover;
+    // background-repeat: no-repeat;
+    // background-attachment: fixed;
+}
+
+/* Maquetado General */
+#bodygeneral {
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px auto 100px;
+    grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+}
+#headergeneral {
+    grid-area: header;
+    height: 100px;
+    width: 100%;
+    box-sizing: border-box;
+    position: fixed;
+    z-index: 100;
+}
+
+#maingeneral {
+    grid-area: main;
+    /* background-color: yellowgreen; */
+    padding-top: 0px;
+    height: auto;
+    width: 100%;
+}
+#footer {
+    grid-area: footer;
+    height: 100px;
+    width: 100%;
+    /* background-color: blue; */
+}
+
+/* Header - Barra de Navegación General */
+#navbar {
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    border-bottom: 5px solid rgb(247, 4, 4);
+    position:fixed;
+    z-index: 100;
+    top: 0;
+    width: 100%;
+    height: 80px;
+}
+.logotipo{
+    height: 80px;
+    width: auto;
+}
+.nav-link{
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    text-decoration:none;
+    text-decoration-line: none;
+}
+.nav-link:hover{
+    color: red;
+    transition: .9s;
+}
+.nav-item {
+    display: inline-block;
+    align-items:center;
+}
+/* Media queries */
+@media (max-width: 768px) {
+    #bodygeneral {
+        grid-template-rows: 100px auto; /* Revisar espacio del Footer*/ 
+        // padding-top: 80px;
+    }
+
+    #headergeneral {
+        height: 80px; 
+    }
+    #navbar {
+        display: flex;
+        background-color: rgb(0, 0, 0);
+        border-bottom: 5px solid rgb(247, 4, 4);
+        // position:fixed;
+        // z-index: 100;
+        // top: 0;
+        width: 100%;
+        height: 80px;
+    }
+    .logotipo{
+        height: 50px;
+        width: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    #bodygeneral {
+        grid-template-rows: 100px auto; /* Revisar espacio del Footer*/ 
+        // padding-top: 60px;
+    }
+
+    #headergeneral {
+        height: 60px;
+    }
+}
+
+@media (max-width: 240px) {
+    #bodygeneral {
+        grid-template-rows: 100px auto; /* Revisar espacio del Footer*/ 
+        // padding-top: 80px;
+    }
+
+    #headergeneral {
+        height: 80px; 
+    }
+    .logotipo{
+        height: 30px;
+        width: auto;
+    }
+}

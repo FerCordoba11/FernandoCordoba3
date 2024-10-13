@@ -1,0 +1,58 @@
+
+.d-item {
+    height: 450px;
+    width: 100%;
+}
+.imgcarrousel{
+    height: 450px;
+    width: 100%;
+}
+#Parrafoindex {
+    color: #545454;
+    font-family: "Poppins", sans-serif;
+    font-size: 17px;
+    text-align: center;
+    padding: 0% 10%;
+}
+
+
+main p span{
+    color:rgb(216, 16, 16);
+    font-weight: bolder;
+}
+
+.card {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+.card-body {
+        display: flex;
+        flex-direction:row;
+        align-items: center;
+}
+.card img {
+    max-width: 50%;
+    height: auto;
+}
+
+.T2 , .T3, .T4 {color: rgb(237, 1, 1);
+    text-align: center;
+    font-family: "EB Garamond", serif;;
+    }
+
+.imagest2, .imagest3, .imagest4 {
+    display: flex;
+    justify-content: center;
+    max-width: 600px;
+    gap: 20px;
+}
+
+// @media (max-width: 768px) {
+//     .d-item {
+//         height: 450px;
+//     }
+    
+// }
+
