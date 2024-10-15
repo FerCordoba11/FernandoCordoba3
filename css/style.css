@@ -153,6 +153,7 @@
 }
 
 .imgcarrousel {
+  height: 100%;
   width: 100%;
 }
 
@@ -707,11 +708,6 @@
   margin-bottom: 15px;
 }
 
-.deco {
-  background-color: white;
-  height: 1000px;
-}
-
 .video-container {
   position: relative;
   height: 400px;
@@ -735,6 +731,15 @@
   color: white;
   font-size: 3rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.decoracion {
+  background-color: white;
+}
+
+.decoImg {
+  height: 50px;
+  width: auto;
 }
 
 /*# sourceMappingURL=style.css.map */
