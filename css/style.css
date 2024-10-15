@@ -50,8 +50,8 @@
   height: 80px;
 }
 
-.logotipo {
-  height: 80px;
+#logoNavbar {
+  height: 70px;
   width: auto;
 }
 
@@ -89,7 +89,7 @@
     width: 100%;
     height: 80px;
   }
-  .logotipo {
+  #logoNavbar {
     height: 50px;
     width: auto;
   }
@@ -109,14 +109,42 @@
   #headergeneral {
     height: 80px;
   }
-  .logotipo {
+  #logoNavbar {
     height: 30px;
     width: auto;
   }
 }
 #footer {
+  color: white;
   border-top: 5px solid red;
   height: 100px;
+  width: 100%;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.redes {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+
+.logoRed {
+  width: 40px;
+  height: 40px;
+}
+
+.logotipo {
+  height: 80px;
+  width: auto;
+}
+
+.firma {
+  height: 40px;
+  width: auto;
 }
 
 .d-item {
@@ -125,24 +153,86 @@
 }
 
 .imgcarrousel {
-  height: 450px;
+  height: 100%;
   width: 100%;
 }
 
 #Parrafoindex {
+  display: flex;
+  flex-direction: row;
   color: #545454;
   font-family: "Poppins", sans-serif;
   font-size: 17px;
   text-align: center;
   padding: 0% 10%;
 }
-
-main p span {
+#Parrafoindex p span {
   color: rgb(216, 16, 16);
   font-weight: bolder;
 }
 
+@media (max-width: 768px) {
+  #Parrafoindex {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.Seccion2-index {
+  background-color: white;
+}
+.Seccion2-index p {
+  background-color: white;
+  margin: 50px;
+  align-content: end;
+  font-family: "Poppins", serif;
+  font-style: italic;
+  font-weight: 200;
+  font-size: 15px;
+}
+
+.video-index {
+  background-color: white;
+  position: relative;
+  height: 200px;
+  width: 70%;
+}
+
+.parrSegIndex {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 0% 10%;
+}
+
+/* Boton */
+.botonIndexDescubre {
+  align-items: center;
+  margin-bottom: 30px;
+  background-color: white;
+}
+
+.descubre {
+  width: 100%;
+  margin: 0% 45%;
+  padding: 15px 30px;
+  font-family: "Poppins", serif;
+  font-size: 12px;
+  font-weight: bolder;
+  color: black;
+  background-color: white;
+  border: 2px solid black;
+  transition: background-color 0.3s, color 0.3s;
+  text-decoration-line: none;
+}
+
+.descubre:hover {
+  background-color: #000000;
+  color: #e0e0e0;
+}
+
 .card {
+  border: none;
   background-color: rgb(255, 255, 255);
   display: flex;
   align-items: center;
@@ -160,22 +250,9 @@ main p span {
   height: auto;
 }
 
-.T2, .T3, .T4 {
-  color: rgb(237, 1, 1);
-  text-align: center;
-  font-family: "EB Garamond", serif;
-}
-
-.imagest2, .imagest3, .imagest4 {
-  display: flex;
-  justify-content: center;
-  max-width: 600px;
-  gap: 20px;
-}
-
 /* CONTACTO - Main */
+/*Img Portada -- contact-section*/
 .contact-section {
-  /*Img Portada -- contact-section*/
   position: relative;
   width: 100%;
   height: 400px;
