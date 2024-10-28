@@ -27,18 +27,20 @@
 
 .trabajos{
     display: grid;
+    padding-top: 5%;
     padding-right: 5%;
     padding-left: 5%;
     height: auto;
     width: 100%;
-    grid-template-columns: 20% 80%;
-    grid-template-rows: repeat(5, auto);
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, auto);
     gap: 10px;
-    grid-template-areas: "aside mesas"
-    "aside alacenas"
-    "aside escaleras"
-    "aside puertas"
-    "aside rack";
+    grid-template-areas: "aside"
+    "mesas"
+    "alacenas"
+    "escaleras"
+    "puertas"
+    "rack";
 }
 /* Aside */
 .aside{
@@ -51,8 +53,6 @@
 }
 .asideli {
     display: flex;
-    flex-direction: column;
-    position: fixed;
     list-style-type: none;
 }
 .asideli a {
@@ -68,10 +68,31 @@
 
 
 /* Trabajos */
+#mesas {
+    grid-area: mesas;
+    font-family:"Poppins", sans-serif;
+}
+#alacenas {
+    grid-area: alacenas;
+    font-family:"Poppins", sans-serif;
+}
+#escaleras{
+    grid-area: escaleras;
+    font-family:"Poppins", sans-serif;
+}
+#puertas{
+    grid-area: puertas;
+    font-family:"Poppins", sans-serif;
+}
+#rack{
+    grid-area: rack;
+    font-family:"Poppins", sans-serif;
+}
 
 #mesas h1 {
     color: white;
     margin: 0% 50%;
+
 }
 
 
@@ -81,20 +102,22 @@
     align-items: center;
 }
 
+
 .a1, .a2, .a3, .a4{
     display: flex;
     align-items: center;
     padding: 10px;
 }
 .a1img, .a2img, .a3img, .a4img {
-    width: 350px;
+    width: 300px;
     height: auto;
     margin: 20px;
     border: 7px solid black;
+    border-radius: 50px;
 }
 .a1P, .a2P, .a3P, .a4P {
     color: rgb(255, 255, 255);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family:"Poppins", sans-serif;
     margin: 30px;
 }
 
@@ -105,14 +128,15 @@
     padding: 10px;
 }
 .b1img, .b2img, .b3img, .b4img {
-    width: 350px;
+    width: 300px;
     height: auto;
     margin: 20px;
     border: 7px solid black;
+    border-radius: 50px;
 }
 .b1P, .b2P, .b3P, .b4P { 
     color: white;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family:"Poppins", sans-serif;
     margin: 30px;
 }
 
@@ -123,14 +147,15 @@
     padding: 10px;
 }
 .c1img, .c2img, .c3img, .c4img {
-    width: 350px;
+    width: 300px;
     height: auto;
     margin: 20px;
     border: 7px solid black;
+    border-radius: 50px;
 }
 .c1P, .c2P, .c3P, .c4P {
     color: white;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family:"Poppins", sans-serif;
     margin: 30px;
 }
 
@@ -140,14 +165,15 @@
     padding: 10px;
 }
 .d1img, .d2img, .d3img, .d4img {
-    width: 350px;
+    width: 300px;
     height: auto;
     margin: 20px;
     border: 7px solid black;
+    border-radius: 50px;
 }
 .d1P, .d2P, .d3P, .d4P {
     color: white;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family:"Poppins", sans-serif;
     margin: 30px;
 }
 
@@ -157,14 +183,15 @@
     padding: 10px;
 }
 .e1img, .e2img, .e3img, .e4img {
-    width: 350px;
+    width: 300px;
     height: auto;
     margin: 20px;
     border: 7px solid black;
+    border-radius: 50px;
 }
 .e1P, .e2P, .e3P, .e4P {
     color: white;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family:"Poppins", sans-serif;
     margin: 30px;
 }
 
@@ -180,18 +207,18 @@
             "puertas"
             "rack";
     }
-    .aside {
-        display: flex;
-        position: relative;
-        height: 100px;
-        width: auto;
-    }
-    .asideli {
-        flex-direction: row;
-        flex-wrap: wrap;
-        position:fixed;
-        top: 120px;
-    }
+    // .aside {
+    //     display: flex;
+    //     position: relative;
+    //     height: 100px;
+    //     width: auto;
+    // }
+    // .asideli {
+    //     flex-direction: row;
+    //     flex-wrap: wrap;
+    //     position:fixed;
+    //     top: 120px;
+    // }
 }
 
 @media (max-width: 480px) {
