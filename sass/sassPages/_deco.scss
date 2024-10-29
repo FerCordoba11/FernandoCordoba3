@@ -29,11 +29,21 @@
     flex-wrap: nowrap;
     background-color: white;
 }
+.TiendaDeco{
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    border-bottom: 2px solid black;
+    width: auto;
+    padding: 2% 0%;
+    margin: 0% 30%;
+}
 .DecoProducto{
     width: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 50px;
 
 }
 .Name{
@@ -47,7 +57,6 @@
 }
 .text-focus-in{
     width: 50%;
-
     padding: 10px 30px;
     font-family: "Poppins", serif;
     font-size: 15px;
@@ -69,12 +78,14 @@
     color: rgb(248, 248, 248);
     background-color: black;
     border-bottom: 3.5px solid red;
-   
     text-decoration: none;
     list-style-type: none;
     -webkit-animation:text-focus-in .6s;
     animation:text-focus-in .6s}
-    @-webkit-keyframes text-focus-in{0%{-webkit-filter:blur(12px);filter:blur(12px);opacity:0}100%{-webkit-filter:blur(0);filter:blur(0);opacity:1}}@keyframes text-focus-in{0%{-webkit-filter:blur(12px);filter:blur(12px);opacity:0}100%{-webkit-filter:blur(0);filter:blur(0);opacity:1}}
+
+
+    @-webkit-keyframes text-focus-in{0%{-webkit-filter:blur(12px);filter:blur(12px);opacity:0}100%{-webkit-filter:blur(0);filter:blur(0);opacity:1}}
+    @keyframes text-focus-in{0%{-webkit-filter:blur(12px);filter:blur(12px);opacity:0}100%{-webkit-filter:blur(0);filter:blur(0);opacity:1}}
 
 
 
@@ -141,3 +152,24 @@
     content: url(../../images/deco/15b.jpg);
 }
 
+
+.cuadro {
+    display: flex;
+    align-items: center;
+    width: 500%;
+    height: 300px;
+}
+.cuadro img {
+    width: 500%;
+    height: 200px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+.cuadro img:hover{
+    width: 99%;
+    height: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
