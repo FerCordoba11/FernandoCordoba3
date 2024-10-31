@@ -152,24 +152,3 @@
     content: url(../images/deco/15b.jpg);
 }
 
-
-.cuadro {
-    display: flex;
-    align-items: center;
-    width: 500%;
-    height: 300px;
-}
-.cuadro img {
-    width: 500%;
-    height: 200px;
-    flex-grow: 1;
-    object-fit: cover;
-    opacity: .8;
-    transition: .5s ease;
-}
-.cuadro img:hover{
-    width: 99%;
-    height: 300px;
-    opacity: 1;
-    filter: contrast(120%);
-}
