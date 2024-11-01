@@ -147,6 +147,10 @@
   width: auto;
 }
 
+#navbarSupportedContent {
+  background-color: black;
+}
+
 .d-item {
   height: 450px;
   width: 100%;
